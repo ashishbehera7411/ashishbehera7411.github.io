@@ -1,0 +1,148 @@
+header .navbar {
+  margin-right: 12rem;
+}
+
+header .theme-toggle {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  z-index: 1001;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #d1d5db;
+  border-radius: 2rem;
+  background: #f3f4f6;
+  color: #172033;
+  cursor: pointer;
+  font: 600 1.3rem "Poppins", sans-serif;
+  text-transform: none;
+}
+
+header .theme-toggle:hover {
+  background: #e5e7eb;
+}
+
+header .theme-toggle:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+header .theme-toggle i {
+  font-size: 1.5rem;
+}
+
+body.dark-mode {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark-mode header {
+  background-color: #1f2937;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode header .navbar ul li a {
+  color: #e5e7eb;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover {
+  color: #93c5fd;
+  border-color: #93c5fd;
+}
+
+body.dark-mode header .theme-toggle {
+  border-color: #4b5563;
+  background: #374151;
+  color: #f9fafb;
+}
+
+body.dark-mode header .theme-toggle:hover {
+  background: #4b5563;
+}
+
+body.dark-mode .home .content h2,
+body.dark-mode .home .content p,
+body.dark-mode .heading,
+body.dark-mode .about .row .content h3,
+body.dark-mode .about .row .content .tag,
+body.dark-mode .about .row .content p,
+body.dark-mode .education .qoute,
+body.dark-mode .education .box-container .box .content p,
+body.dark-mode .experience .quote,
+body.dark-mode .contact {
+  color: #e5e7eb;
+}
+
+body.dark-mode .about,
+body.dark-mode .education,
+body.dark-mode .experience,
+body.dark-mode .contact,
+body.dark-mode .page_404 {
+  background: #111827;
+}
+
+body.dark-mode .education .box-container .box,
+body.dark-mode .contact .container {
+  background: #1f2937;
+}
+
+body.dark-mode .education .box-container .box .content h3 {
+  color: #bfdbfe;
+}
+
+body.dark-mode .education h4 {
+  color: #86efac;
+}
+
+body.dark-mode .about .row .content .box-container .box p span {
+  color: #93c5fd;
+}
+
+body.dark-mode .experience .timeline::after {
+  background: #93c5fd;
+}
+
+body.dark-mode .experience .container::after {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+body.dark-mode .contact .content form,
+body.dark-mode form .field input,
+body.dark-mode form .message textarea {
+  background: #374151;
+  color: #f9fafb;
+}
+
+body.dark-mode form .field input,
+body.dark-mode form .message textarea {
+  border-color: #6b7280;
+}
+
+body.dark-mode form i,
+body.dark-mode .field input::placeholder,
+body.dark-mode .message textarea::placeholder {
+  color: #d1d5db;
+}
+
+body.dark-mode .work .box-container .box .content {
+  background: rgba(31, 41, 55, 0.96);
+  color: #f9fafb;
+}
+
+body.dark-mode .msg {
+  color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    margin-right: 0;
+  }
+
+  header .theme-toggle {
+    right: 1.5rem;
+  }
+}
